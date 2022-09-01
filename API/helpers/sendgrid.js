@@ -1,11 +1,11 @@
 const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+sgMail.setApiKey('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')
 
 
 const sendMail = (email) => {
     const msg = {
         to: email,
-        from: process.env.SENDGRID_EMAIL,
+        from:'c6g29ftmern@gmail.com' ,
         subject: '¡Bienvenido a Garage Store!',
         text: '¡Bienvenido a Garage Store!, Gracias por Registrarte!',
         html: `

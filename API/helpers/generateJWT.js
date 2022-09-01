@@ -6,7 +6,7 @@ const generateJWT = (userId = '') =>{
     return new Promise((res, rej) => {
         const payload = {userId};
 
-        jwt.sign(payload,process.env.SECRETORPRIVATEKEY, {
+        jwt.sign(payload,'mipassword123', {
             expiresIn: '6h'
         }, (err, token) =>{
             if(err){

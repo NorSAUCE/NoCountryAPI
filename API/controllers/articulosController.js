@@ -1,3 +1,4 @@
+const { func } = require('joi');
 const articulos = require('../modelos/articulos');
 module.exports ={
     getAll: async function(req, res, next) {
@@ -115,9 +116,6 @@ module.exports ={
        
       } catch (error) {
           console.log(error);
-      }
-
+      }  
     },
-      
-
-}
+  }
