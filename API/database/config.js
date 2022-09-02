@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 const dbConnection = async() => {
-   mongoose.connect('mongodb+srv://user_node_cafe:G5AlKgGATnV3uzya@miclustercafe.0n3yp.mongodb.net/garageStore',function(error){
+   mongoose.connect('mongodb+srv://NoraSAUCE:mypass123456789@cluster0.usglzz3.mongodb.net/?retryWrites=true&w=majority',function(error){
     if(error){
         throw error;
     }else{
